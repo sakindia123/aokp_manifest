@@ -12,6 +12,12 @@
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod/"
            revision="ics" />
+           
+  <remote name="pico"
+           fetch="git://github.com/sakindia123/" />
+           
+  <remote name="lirokoa"
+           fetch="git://github.com/lirokoa/" />
 
   <default remote="aosp"
            sync-j="4" />
@@ -27,6 +33,9 @@
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="dalvik" name="AOKP/platform_dalvik" remote="gh" revision="ics" />
   <project path="development" name="AOKP/platform_development" remote="gh" revision="ics" />
+  <project path="device/htc/pico" name="aokp-pico" remote="pico" revision="master"/>
+  <project path="vendor/htc/pico" name="ics-vendor-pico" remote="pico" revision="master"/>
+  <project path="kernel/htc/pico" name="htc_pico_kernel" remote="lirokoa" revision="ics"/>
   <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
